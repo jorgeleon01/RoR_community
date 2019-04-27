@@ -1,6 +1,6 @@
-<div class="col">
+<div class="col-4">
   <figure class="figure">
-    <%= image_tag image.picture.thumb.url, class: 'figure-img img-fluid rounded'%>
+    <%= image_tag image.picture.medium.url, class: 'figure-img img-fluid rounded'%>
     <figcaption class="figure-caption">
       <%= image.description %>
       <%= link_to 'Editar', edit_image_path(image) %>
