@@ -1,9 +1,9 @@
 class ImagesController < ApplicationController
-    
+
     before_action :set_image, only: [:show, :edit, :update, :destroy]
 
     def index
-    	@images = Image.all
+        @images = Image.all
     end
 
     def new
@@ -39,7 +39,7 @@ class ImagesController < ApplicationController
     private
 
     def image_params
-    	params.require(:image).permit :description, :picture
+        params.require(:image).permit :description, :picture
     end
 
     def set_image
